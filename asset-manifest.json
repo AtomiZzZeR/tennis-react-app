@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.js": "/tennis-react-app/static/js/main.ac575e0b.js",
+    "static/js/787.51d7ceb1.chunk.js": "/tennis-react-app/static/js/787.51d7ceb1.chunk.js",
+    "static/media/img.jpg": "/tennis-react-app/static/media/img.812f520f88334d9862c5.jpg",
+    "static/media/img1.jpg": "/tennis-react-app/static/media/img1.a6ab37b45463b0c17899.jpg",
+    "static/media/img3.jpg": "/tennis-react-app/static/media/img3.79c28a16e765e3af8604.jpg",
+    "static/media/img2.jpg": "/tennis-react-app/static/media/img2.2266a29fdf36afb8fa29.jpg",
+    "static/media/img-trainer5.jpg": "/tennis-react-app/static/media/img-trainer5.78466204d689b3fd1977.jpg",
+    "static/media/img-trainer6.jpg": "/tennis-react-app/static/media/img-trainer6.83a78c1b0e823a945850.jpg",
+    "static/media/img-trainer1.jpg": "/tennis-react-app/static/media/img-trainer1.19817e77035a8031aa9d.jpg",
+    "static/media/img-trainer4.jpg": "/tennis-react-app/static/media/img-trainer4.c66372976dcfed991def.jpg",
+    "static/media/img-trainer3.jpg": "/tennis-react-app/static/media/img-trainer3.501d8f72534cc2f244f7.jpg",
+    "static/media/img-trainer2.jpg": "/tennis-react-app/static/media/img-trainer2.29a1caa5d6e1cf36ecc1.jpg",
+    "static/media/logo.svg": "/tennis-react-app/static/media/logo.12b148f954aeb587ffb1b750540b3917.svg",
+    "static/media/icon-vkontakte.svg": "/tennis-react-app/static/media/icon-vkontakte.224c0ad1bbde5b28ccf50fe67c0e56f6.svg",
+    "static/media/icon-right.svg": "/tennis-react-app/static/media/icon-right.b3ed061e448a109d0743151b6c3a69c7.svg",
+    "static/media/icon-left.svg": "/tennis-react-app/static/media/icon-left.e2fdf9efb5f46dff5655442accb9f76d.svg",
+    "static/media/icon.svg": "/tennis-react-app/static/media/icon.0c808d26a3fe210989fd3cdc76b3fe0f.svg",
+    "static/media/icon-youtube.svg": "/tennis-react-app/static/media/icon-youtube.a6278ceda86c401c5a54e79deca9a072.svg",
+    "index.html": "/tennis-react-app/index.html",
+    "static/media/icon-link.svg": "/tennis-react-app/static/media/icon-link.667219924c1c723bc4f60be22321924b.svg",
+    "static/media/icon-telegram.svg": "/tennis-react-app/static/media/icon-telegram.1d55ca67600b889176cf381d72f7f3d7.svg",
+    "static/media/icon-play.svg": "/tennis-react-app/static/media/icon-play.c8168d36679814b601d70b825212d5c4.svg",
+    "main.ac575e0b.js.map": "/tennis-react-app/static/js/main.ac575e0b.js.map",
+    "787.51d7ceb1.chunk.js.map": "/tennis-react-app/static/js/787.51d7ceb1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ac575e0b.js"
+  ]
+}
