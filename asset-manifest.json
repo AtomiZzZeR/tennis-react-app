@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/tennis-react-app/static/js/main.f2eb3a75.js",
+    "main.js": "/tennis-react-app/static/js/main.a77838ce.js",
     "static/js/787.51d7ceb1.chunk.js": "/tennis-react-app/static/js/787.51d7ceb1.chunk.js",
     "static/media/bg-home.jpg": "/tennis-react-app/static/media/bg-home.d76a66ffde5e702e51c0.jpg",
     "static/media/img.jpg": "/tennis-react-app/static/media/img.812f520f88334d9862c5.jpg",
@@ -23,10 +23,10 @@
     "static/media/icon-link.svg": "/tennis-react-app/static/media/icon-link.667219924c1c723bc4f60be22321924b.svg",
     "static/media/icon-telegram.svg": "/tennis-react-app/static/media/icon-telegram.1d55ca67600b889176cf381d72f7f3d7.svg",
     "static/media/icon-play.svg": "/tennis-react-app/static/media/icon-play.c8168d36679814b601d70b825212d5c4.svg",
-    "main.f2eb3a75.js.map": "/tennis-react-app/static/js/main.f2eb3a75.js.map",
+    "main.a77838ce.js.map": "/tennis-react-app/static/js/main.a77838ce.js.map",
     "787.51d7ceb1.chunk.js.map": "/tennis-react-app/static/js/787.51d7ceb1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.f2eb3a75.js"
+    "static/js/main.a77838ce.js"
   ]
 }
