@@ -26,10 +26,9 @@ const Menu = styled.nav`
   width: 738px;
 `;
 
-const Link = styled.div``;
 
 const TextLink = styled.a`
-  color: ${EThemeColors.font};
+  const Link = styled.div``;
   transition: 0.5s;
   border: 1px solid transparent;
 
@@ -50,7 +49,6 @@ const StyledHeader = {
   Container,
   Inner,
   Menu,
-  Link,
   TextLink,
   BoxIcons,
 };

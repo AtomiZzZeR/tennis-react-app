@@ -38,11 +38,12 @@ const Header: FC = () => {
 
           <Styled.Menu>
             {links.map(({ id, path, name }) => (
-              <Styled.Link key={id}>
-                <Link to={path}>
-                  <Styled.TextLink>{name}</Styled.TextLink>
-                </Link>
-              </Styled.Link>
+              <Link
+                to={path}
+                key={id}
+              >
+                <Styled.TextLink>{name}</Styled.TextLink>
+              </Link>
             ))}
           </Styled.Menu>
 
