@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/tennis-react-app/static/js/main.72d480d2.js",
+    "main.js": "/tennis-react-app/static/js/main.7333c34f.js",
     "static/js/787.51d7ceb1.chunk.js": "/tennis-react-app/static/js/787.51d7ceb1.chunk.js",
     "static/media/bg-home.jpg": "/tennis-react-app/static/media/bg-home.d76a66ffde5e702e51c0.jpg",
     "static/media/img.jpg": "/tennis-react-app/static/media/img.812f520f88334d9862c5.jpg",
@@ -24,17 +24,17 @@
     "static/media/icon-left.svg": "/tennis-react-app/static/media/icon-left.e2fdf9efb5f46dff5655442accb9f76d.svg",
     "static/media/icon.svg": "/tennis-react-app/static/media/icon.0c808d26a3fe210989fd3cdc76b3fe0f.svg",
     "static/media/icon-youtube.svg": "/tennis-react-app/static/media/icon-youtube.a6278ceda86c401c5a54e79deca9a072.svg",
-    "static/media/icon-three.svg": "/tennis-react-app/static/media/icon-three.e80e5cb22af7cafc02f8beefa2fc9cf4.svg",
+    "static/media/icon-three.svg": "/tennis-react-app/static/media/icon-three.5b275e3fb4cc7bb7ecc6d62029ce4496.svg",
     "index.html": "/tennis-react-app/index.html",
     "static/media/icon-link.svg": "/tennis-react-app/static/media/icon-link.667219924c1c723bc4f60be22321924b.svg",
     "static/media/icon-telegram.svg": "/tennis-react-app/static/media/icon-telegram.1d55ca67600b889176cf381d72f7f3d7.svg",
-    "static/media/icon-four.svg": "/tennis-react-app/static/media/icon-four.e4df42bd68dedc0324b401a7bc6fcbcf.svg",
-    "static/media/icon-seven.svg": "/tennis-react-app/static/media/icon-seven.fbdb21347c9a73429cb023240b8768e0.svg",
+    "static/media/icon-four.svg": "/tennis-react-app/static/media/icon-four.e609a9b01ad6574d789406fd00530e66.svg",
+    "static/media/icon-seven.svg": "/tennis-react-app/static/media/icon-seven.2d6f05ea71b6c5537b31d8d37522cb87.svg",
     "static/media/icon-play.svg": "/tennis-react-app/static/media/icon-play.c8168d36679814b601d70b825212d5c4.svg",
-    "main.72d480d2.js.map": "/tennis-react-app/static/js/main.72d480d2.js.map",
+    "main.7333c34f.js.map": "/tennis-react-app/static/js/main.7333c34f.js.map",
     "787.51d7ceb1.chunk.js.map": "/tennis-react-app/static/js/787.51d7ceb1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.72d480d2.js"
+    "static/js/main.7333c34f.js"
   ]
 }
