@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { EThemeColors } from '../../assets/styles/theme/ThemeColors';
 
 const Wrapper = styled.header`
+  position: absolute;
+  width: 100%;
   height: 105px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 `;
@@ -24,7 +26,7 @@ const Menu = styled.nav`
   width: 739px;
 `;
 
-const Link = styled.a`
+const TextLink = styled.a`
   color: ${EThemeColors.font};
 `;
 
@@ -39,7 +41,7 @@ const StyledHeader = {
   Container,
   Inner,
   Menu,
-  Link,
+  TextLink,
   BoxIcons,
 };
 

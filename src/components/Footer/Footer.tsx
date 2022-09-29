@@ -15,7 +15,7 @@ const Footer = () => {
 
           <Styled.Menu>
             {menu.map((link) => (
-              <a href={'#'}>{link}</a>
+              <Styled.Link href={'#'}>{link}</Styled.Link>
             ))}
           </Styled.Menu>
 

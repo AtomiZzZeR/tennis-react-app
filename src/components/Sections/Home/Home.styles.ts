@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 import { EThemeColors } from '../../../assets/styles/theme/ThemeColors';
 
-const Wrapper = styled.section`
+interface IWrapperProps {
+  bg: string;
+}
+
+const Wrapper = styled.section<IWrapperProps>`
   margin: 0px 0px 150px 0px;
   color: ${EThemeColors.font};
-  background: url('../bg-home.jpg') 50% no-repeat;
+  background: url(${(props) => props.bg}) 50% no-repeat;
 `;
 
 const Container = styled.div`

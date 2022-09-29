@@ -3,9 +3,26 @@ import Styled from './Header.styles';
 import logo from '../../assets/images/header/logo.svg';
 import iconYt from '../../assets/images/header/icon-youtube.svg';
 import iconVk from '../../assets/images/header/icon-vkontakte.svg';
+import { Link } from 'react-router-dom';
+import { v4 as uuid } from 'uuid';
+
+interface ILink {
+  id: string;
+  path: string;
+  name: string;
+}
 
 const Header: FC = () => {
-  const links: string[] = ['Главная', 'О клубе', 'Турниры', 'Услуги', 'Детский теннис', 'Галерея', 'Цены', 'Контакты'];
+  const links: ILink[] = [
+    { id: uuid(), path: '/', name: 'Главная' },
+    { id: uuid(), path: '/club', name: 'О клубе' },
+    { id: uuid(), path: '/news', name: 'Новости' },
+    { id: uuid(), path: '/1', name: 'Услуги' },
+    { id: uuid(), path: '/2', name: 'Детский теннис' },
+    { id: uuid(), path: '/3', name: 'Галерея' },
+    { id: uuid(), path: '/43', name: 'Цены' },
+    { id: uuid(), path: '/5', name: 'Контакты' },
+  ];
 
   return (
     <Styled.Wrapper>
@@ -19,13 +36,13 @@ const Header: FC = () => {
           </a>
 
           <Styled.Menu>
-            {links.map((name) => (
-              <Styled.Link
-                href={'#'}
-                key={name}
+            {links.map(({ id, path, name }) => (
+              <Link
+                to={path}
+                key={id}
               >
-                {name}
-              </Styled.Link>
+                <Styled.TextLink>{name}</Styled.TextLink>
+              </Link>
             ))}
           </Styled.Menu>
 

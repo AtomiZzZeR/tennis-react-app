@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div``;
 
-const StyledLayout = {
+const StyledNotFoundPage = {
   Wrapper,
 };
 
-export default StyledLayout;
+export default StyledNotFoundPage;
