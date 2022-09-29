@@ -14,19 +14,20 @@ const Layout: FC = () => {
 
       <Routes>
         <Route
-          path={'/'}
+          path={'/tennis-react-app/'}
           element={<MainPage />}
         />
         <Route
-          path={'/news'}
+          path={'/tennis-react-app/news'}
           element={<NewsPage />}
         />
         <Route
-          path={'/club'}
+          path={'/tennis-react-app/club'}
           element={<ClubPage />}
         />
         <Route
-          path={'*'}
+          path={'/tennis-react-app/*'}
+
           element={<NotFoundPage />}
         />
       </Routes>

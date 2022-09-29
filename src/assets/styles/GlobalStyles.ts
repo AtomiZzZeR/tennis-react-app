@@ -47,6 +47,17 @@ const GlobalStyles = createGlobalStyle`
     -webkit-text-size-adjust: 100%;
   }
 
+	body::-webkit-scrollbar {
+ 		 width: 8px;              
+	}
+	body::-webkit-scrollbar-track {
+  	background: #dcdcdc; 
+	}
+	body::-webkit-scrollbar-thumb {
+  	background-color: ${EThemeColors.block};   
+  	border-radius: 100px;      
+	}
+
   input,
   button,
   textarea {
