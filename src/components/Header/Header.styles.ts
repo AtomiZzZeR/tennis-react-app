@@ -26,9 +26,8 @@ const Menu = styled.nav`
   width: 738px;
 `;
 
-
 const TextLink = styled.a`
-  const Link = styled.div``;
+  color: ${EThemeColors.font};
   transition: 0.5s;
   border: 1px solid transparent;
 

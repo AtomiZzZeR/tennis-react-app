@@ -38,7 +38,7 @@ const Header: FC = () => {
 
           <Styled.Menu>
             {links.map(({ id, path, name }) => (
-              <Link
+              <Link 
                 to={path}
                 key={id}
               >
