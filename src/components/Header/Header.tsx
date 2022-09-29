@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import Styled from './Header.styles';
 import logo from '../../assets/images/header/logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import iconYt from '../../assets/images/header/icon-youtube.svg';
 import iconVk from '../../assets/images/header/icon-vkontakte.svg';
 import { Link } from 'react-router-dom';
@@ -14,35 +15,34 @@ interface ILink {
 
 const Header: FC = () => {
   const links: ILink[] = [
-    { id: uuid(), path: '/', name: 'Главная' },
-    { id: uuid(), path: '/club', name: 'О клубе' },
-    { id: uuid(), path: '/news', name: 'Новости' },
-    { id: uuid(), path: '/1', name: 'Услуги' },
-    { id: uuid(), path: '/2', name: 'Детский теннис' },
-    { id: uuid(), path: '/3', name: 'Галерея' },
-    { id: uuid(), path: '/43', name: 'Цены' },
-    { id: uuid(), path: '/5', name: 'Контакты' },
+    { id: uuid(), path: '/tennis-react-app/', name: 'Главная' },
+    { id: uuid(), path: '/tennis-react-app/club', name: 'О клубе' },
+    { id: uuid(), path: '/tennis-react-app/news', name: 'Новости' },
+    { id: uuid(), path: '/tennis-react-app/services', name: 'Услуги' },
+    { id: uuid(), path: '/tennis-react-app/kids', name: 'Детский теннис' },
+    { id: uuid(), path: '/tennis-react-app/gallery', name: 'Галерея' },
+    { id: uuid(), path: '/tennis-react-app/prices', name: 'Цены' },
+    { id: uuid(), path: '/tennis-react-app/contacts', name: 'Контакты' },
   ];
 
   return (
     <Styled.Wrapper>
       <Styled.Container>
         <Styled.Inner>
-          <a href={'#'}>
+          <Link to={'/tennis-react-app/'}>
             <img
               src={logo}
               alt={'header logo'}
             />
-          </a>
+          </Link>
 
           <Styled.Menu>
             {links.map(({ id, path, name }) => (
-              <Link
-                to={path}
-                key={id}
-              >
-                <Styled.TextLink>{name}</Styled.TextLink>
-              </Link>
+              <Styled.Link key={id}>
+                <Link to={path}>
+                  <Styled.TextLink>{name}</Styled.TextLink>
+                </Link>
+              </Styled.Link>
             ))}
           </Styled.Menu>
 

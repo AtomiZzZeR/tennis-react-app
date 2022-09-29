@@ -23,11 +23,20 @@ const Inner = styled.div`
 const Menu = styled.nav`
   display: flex;
   justify-content: space-between;
-  width: 739px;
+  width: 738px;
 `;
+
+const Link = styled.div``;
 
 const TextLink = styled.a`
   color: ${EThemeColors.font};
+  transition: 0.5s;
+  border: 1px solid transparent;
+
+  &:hover {
+    padding: 0px 20px;
+    border-bottom: 1px solid #fff;
+  }
 `;
 
 const BoxIcons = styled.div`
@@ -41,6 +50,7 @@ const StyledHeader = {
   Container,
   Inner,
   Menu,
+  Link,
   TextLink,
   BoxIcons,
 };
