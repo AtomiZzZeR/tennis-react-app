@@ -3,6 +3,7 @@ import Styled from './Home.styles';
 import iconPlay from '../../../assets/images/home/icon-play.svg';
 import iconLink from '../../../assets/images/home/icon-link.svg';
 import { v4 as uuid } from 'uuid';
+import bg from '../../../assets/images/header/bg-home.jpg';
 
 interface IBlockInfo {
   id: string;
@@ -21,7 +22,7 @@ const Home: FC<PropsWithChildren> = ({ children }) => {
   ];
 
   return (
-    <Styled.Wrapper>
+    <Styled.Wrapper bg={bg}>
       {children}
       <Styled.Container>
         <Styled.Inner>

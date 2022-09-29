@@ -1,42 +1,36 @@
-import React from 'react';
+import { FC } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { ClubPage } from '../../pages/ClubPage';
+import { MainPage } from '../../pages/MainPage';
+import { NewsPage } from '../../pages/NewsPage';
+import { NotFoundPage } from '../../pages/NotFoundPage';
 import { Header } from '../Header';
-import { Home } from '../Sections/Home';
-import { Advantages } from '../Sections/Advantages';
 import Styled from './Layout.styles';
-import { About } from '../Sections/About';
-import { Trainers } from '../Sections/Trainers';
-import { Price } from '../Sections/Price';
-import { Services } from '../Sections/Services';
-import { Footer } from '../Footer';
 
-const Layout = () => {
+const Layout: FC = () => {
   return (
-    <Styled.Wrapper>
-      <Styled.Main>
-        <Home>
-          <Header />
-        </Home>
+    <>
+      <Header />
 
-        <Styled.BoxSection>
-          <Advantages />
-        </Styled.BoxSection>
-
-        <Styled.BoxSection>
-          <About />
-        </Styled.BoxSection>
-
-        <Styled.BoxSection>
-          <Trainers />
-        </Styled.BoxSection>
-
-        <Styled.BoxTwoSections>
-          <Price />
-          <Services />
-        </Styled.BoxTwoSections>
-
-        <Footer />
-      </Styled.Main>
-    </Styled.Wrapper>
+      <Routes>
+        <Route
+          path={'/'}
+          element={<MainPage />}
+        />
+        <Route
+          path={'/news'}
+          element={<NewsPage />}
+        />
+        <Route
+          path={'/club'}
+          element={<ClubPage />}
+        />
+        <Route
+          path={'*'}
+          element={<NotFoundPage />}
+        />
+      </Routes>
+    </>
   );
 };
 
