@@ -1,11 +1,32 @@
-import React from 'react';
+import { FC } from 'react';
+import { Contacts } from '../Contacts';
+import { IContact } from '../Contacts/Contacts';
 import Styled from './Footer.styles';
-import logoYt from '../../assets/images/footer/icon-youtube.svg';
-import logoVk from '../../assets/images/footer/icon-vkontakte.svg';
-import logoTg from '../../assets/images/footer/icon-telegram.svg';
+import iconYt from '../../assets/images/icon-youtube-purple.svg';
+import iconVk from '../../assets/images/icon-vkontakte-purple.svg';
+import iconTg from '../../assets/images/icon-telegram-purple.svg';
+import { Menu } from '../Menu';
+import { v4 as uuid } from 'uuid';
+import { EThemeColors } from '../../assets/styles/theme/ThemeColors';
+import { ILink } from '../Menu/Menu';
 
-const Footer = () => {
-  const menu: string[] = ['Главная', 'О клубе', 'Турниры', 'Услуги', 'Детский теннис', 'Галерея', 'Цены', 'Контакты'];
+const Footer: FC = () => {
+  const menu: ILink[] = [
+    { id: uuid(), path: '/tennis-react-app/', name: 'Главная' },
+    { id: uuid(), path: '/tennis-react-app/club', name: 'О клубе' },
+    { id: uuid(), path: '/tennis-react-app/news', name: 'Новости' },
+    { id: uuid(), path: '/tennis-react-app/services', name: 'Услуги' },
+    { id: uuid(), path: '/tennis-react-app/kids', name: 'Детский теннис' },
+    { id: uuid(), path: '/tennis-react-app/gallery', name: 'Галерея' },
+    { id: uuid(), path: '/tennis-react-app/prices', name: 'Цены' },
+    { id: uuid(), path: '/tennis-react-app/contacts', name: 'Контакты' },
+  ];
+
+  const contacts: IContact[] = [
+    { icon: iconYt, link: 'https://www.youtube.com/channel/UCP3pg4AucaTjVUlSaeoyAvA' },
+    { icon: iconVk, link: 'https://vk.com/siolisme' },
+    { icon: iconTg, link: 'https://t.me/Yleephac' },
+  ];
 
   return (
     <Styled.Wrapper>
@@ -13,46 +34,12 @@ const Footer = () => {
         <Styled.Inner>
           <Styled.Copyright>2022 © Все права защищены.</Styled.Copyright>
 
-          <Styled.Menu>
-            {menu.map((link) => (
-              <Styled.Link
-                href={'#'}
-                key={link}
-              >
-                {link}
-              </Styled.Link>
-            ))}
-          </Styled.Menu>
+          <Menu
+            menu={menu}
+            color={EThemeColors.primaryFont}
+          />
 
-          <Styled.BoxContacts>
-            <a
-              href={'https://www.youtube.com/channel/UCP3pg4AucaTjVUlSaeoyAvA'}
-              target={'_blank'}
-            >
-              <img
-                src={logoYt}
-                alt={'icon youtube'}
-              />
-            </a>
-            <a
-              href={'https://vk.com/siolisme'}
-              target={'_blank'}
-            >
-              <img
-                src={logoVk}
-                alt={'icon vkontakte'}
-              />
-            </a>
-            <a
-              href={'https://t.me/Yleephac'}
-              target={'_blank'}
-            >
-              <img
-                src={logoTg}
-                alt={'icon telegram'}
-              />
-            </a>
-          </Styled.BoxContacts>
+          <Contacts contacts={contacts} />
         </Styled.Inner>
       </Styled.Container>
     </Styled.Wrapper>

@@ -78,8 +78,6 @@ const NewsPage: FC = () => {
           />
         ))}
       </Styled.Main>
-
-      <Footer />
     </Styled.Wrapper>
   );
 };

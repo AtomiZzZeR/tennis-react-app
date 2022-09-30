@@ -29,8 +29,6 @@ const Layout = () => {
           <Price />
           <Services />
         </Styled.BoxTwoSections>
-
-        <Footer />
       </Styled.Main>
     </Styled.Wrapper>
   );
