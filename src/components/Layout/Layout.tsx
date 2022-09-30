@@ -4,6 +4,7 @@ import { ClubPage } from '../../pages/ClubPage';
 import { MainPage } from '../../pages/MainPage';
 import { NewsPage } from '../../pages/NewsPage';
 import { NotFoundPage } from '../../pages/NotFoundPage';
+import { Footer } from '../Footer';
 import { Header } from '../Header';
 import Styled from './Layout.styles';
 
@@ -27,10 +28,11 @@ const Layout: FC = () => {
         />
         <Route
           path={'/tennis-react-app/*'}
-
           element={<NotFoundPage />}
         />
       </Routes>
+
+      <Footer />
     </>
   );
 };

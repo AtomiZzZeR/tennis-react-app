@@ -1,20 +1,19 @@
 import { FC } from 'react';
 import Styled from './Header.styles';
 import logo from '../../assets/images/header/logo.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import iconYt from '../../assets/images/header/icon-youtube.svg';
-import iconVk from '../../assets/images/header/icon-vkontakte.svg';
 import { Link } from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
-
-interface ILink {
-  id: string;
-  path: string;
-  name: string;
-}
+import { Contacts } from '../Contacts';
+import { IContact } from '../Contacts/Contacts';
+import iconYt from '../../assets/images/icon-youtube-white.svg';
+import iconVk from '../../assets/images/icon-vkontakte-white.svg';
+import iconTg from '../../assets/images/icon-telegram-white.svg';
+import { Menu } from '../Menu';
+import { ILink } from '../Menu/Menu';
+import { EThemeColors } from '../../assets/styles/theme/ThemeColors';
 
 const Header: FC = () => {
-  const links: ILink[] = [
+  const menu: ILink[] = [
     { id: uuid(), path: '/tennis-react-app/', name: 'Главная' },
     { id: uuid(), path: '/tennis-react-app/club', name: 'О клубе' },
     { id: uuid(), path: '/tennis-react-app/news', name: 'Новости' },
@@ -23,6 +22,12 @@ const Header: FC = () => {
     { id: uuid(), path: '/tennis-react-app/gallery', name: 'Галерея' },
     { id: uuid(), path: '/tennis-react-app/prices', name: 'Цены' },
     { id: uuid(), path: '/tennis-react-app/contacts', name: 'Контакты' },
+  ];
+
+  const contacts: IContact[] = [
+    { icon: iconYt, link: 'https://www.youtube.com/channel/UCP3pg4AucaTjVUlSaeoyAvA' },
+    { icon: iconVk, link: 'https://vk.com/siolisme' },
+    { icon: iconTg, link: 'https://t.me/Yleephac' },
   ];
 
   return (
@@ -36,37 +41,12 @@ const Header: FC = () => {
             />
           </Link>
 
-          <Styled.Menu>
-            {links.map(({ id, path, name }) => (
-              <Link 
-                to={path}
-                key={id}
-              >
-                <Styled.TextLink>{name}</Styled.TextLink>
-              </Link>
-            ))}
-          </Styled.Menu>
+          <Menu
+            menu={menu}
+            color={EThemeColors.font}
+          />
 
-          <Styled.BoxIcons>
-            <a
-              href={'https://www.youtube.com/channel/UCP3pg4AucaTjVUlSaeoyAvA'}
-              target={'_blank'}
-            >
-              <img
-                src={iconYt}
-                alt={'icon youtube'}
-              />
-            </a>
-            <a
-              href={'https://vk.com/siolisme'}
-              target={'_blank'}
-            >
-              <img
-                src={iconVk}
-                alt={'icon vkontakte'}
-              />
-            </a>
-          </Styled.BoxIcons>
+          <Contacts contacts={contacts} />
         </Styled.Inner>
       </Styled.Container>
     </Styled.Wrapper>

@@ -21,8 +21,6 @@ const ClubPage = () => {
 
         <Rules />
       </Styled.Main>
-
-      <Footer />
     </Styled.Wrapper>
   );
 };
